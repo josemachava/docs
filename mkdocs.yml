@@ -1,0 +1,61 @@
+# =================================================================
+# BASE CONFIGURATION
+# =================================================================
+site_name: ""
+site_url: https://your-docs.com/
+
+
+# =================================================================
+# THEME CONFIGURATION
+# =================================================================
+theme:
+  name: material
+  language: en
+  
+  # 1. Mixed Color Palette (Dark Header, Light Body, Purple Accent)
+  palette:
+    # Use the 'default' scheme for a light background and sidebar
+    scheme: default 
+    
+    # Set the 'primary' color to black for the **top header** background
+    primary: white
+    
+    # Set the 'accent' color to deep-purple for links and the active sidebar highlight
+    accent: deep-purple
+    
+  # 2. Features (Layout and Navigation)
+  features:
+    # Creates the top-level navigation (e.g., "Docs", "Changelog")
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # Keeps the primary sidebar fixed for easy scrolling
+    - navigation.expand 
+    # Integrates the secondary sidebar (Page Table of Contents) into the main content area
+    - toc.integrate
+    # Adds a subtle vertical line to expanded sections in the left sidebar
+    - navigation.path
+    
+  # 3. Custom Assets
+  extra_css:
+    # Link to a custom stylesheet for fine-tuning
+    - stylesheets/extra.css
+
+# =================================================================
+# NAVIGATION
+# =================================================================
+nav:
+  - Docs:
+    - 'Home': index.md
+    - 'Your First Deploy': deploy.md
+  
+ 
+
+# =================================================================
+# MARKDOWN EXTENSIONS (for enhanced content features)
+# =================================================================
+markdown_extensions:
+  - admonition # For callout boxes (like the "Render is a unified cloud..." box)
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight # For professional code blocks
+  - attr_list # Allows styling individual elements with custom classes

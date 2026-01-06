@@ -1,0 +1,43 @@
+/* docs/stylesheets/extra.css */
+
+/* 1. Customizing the Dark Header look on the right */
+/* This targets the top header/app bar */
+.md-header {
+    /* Ensure the top bar is dark */
+    background-color: white; 
+}
+
+/* 2. Custom Button Style (for links like "Dashboard" or "Ask AI") */
+/* Applies a background to the last two links in the top navigation */
+/* Note: You may need to inspect your deployed site to fine-tune this selector */
+.md-header__title .md-header-nav__item:nth-last-child(-n+2) {
+    /* Style the buttons on the right of the header */
+    margin-left: 10px;
+}
+
+.md-header__title .md-header-nav__item:last-child {
+    /* Style the main primary button (e.g., "Dashboard") */
+    /* Adjust these colors to match the screenshot's button */
+    background-color: #555; /* A dark gray/black background for the button */
+    border-radius: 4px;
+    padding: 0 10px; 
+}
+
+/* Make the links inside the dark buttons white/lighter */
+.md-header__title .md-header-nav__item:last-child a, 
+.md-header__title .md-header-nav__item:nth-last-child(2) a {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* 3. Purple Sidebar Accent (Adjusting line thickness) */
+/* The accent color (deep-purple) is already set, this makes the bar more prominent */
+.md-nav__link--active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px; /* Adjust thickness of the active purple bar */
+    background-color: var(--md-accent-fg-color);
+}
