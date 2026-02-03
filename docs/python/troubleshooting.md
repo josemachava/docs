@@ -11,7 +11,7 @@
 
 ## `SECRET_KEY` ausente
 
-- Garante que a variável `SECRET_KEY` está definida na Wolke.
+- Garante que a variável `SECRET_KEY` está definida no wolke.
 
 ## `collectstatic` falha
 
