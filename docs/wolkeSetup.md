@@ -1,6 +1,6 @@
 # Configuração Inicial no Wolke
 
-Este guia cobre o setup inicial e a configuração básica para **qualquer** aplicação na Wolke.
+Este guia cobre o setup inicial e a configuração básica para **qualquer** aplicação no wolke.
 
 ## Pré‑requisitos
 
@@ -36,10 +36,6 @@ git add .
 git commit -m "Deploy on wolke"
 git push origin main
 ```
-
-## Comandos One‑Off
-
-Usa o painel da Wolke para executar comandos one‑off no container (ex: migrações, seeds, tarefas de manutenção).
 
 ## Links Úteis
 

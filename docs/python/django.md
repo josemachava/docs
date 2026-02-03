@@ -2,7 +2,7 @@
 
 ## Overview
 
-Este guia descreve como fazer deploy de aplicações **Django** na Wolke, incluindo configuração de ambiente, base de dados, estáticos, media, Gunicorn, migrações e boas práticas de produção.
+Este guia descreve como fazer deploy de aplicações **Django** no wolke, incluindo configuração de ambiente, base de dados, estáticos, media, Gunicorn, migrações e boas práticas de produção.
 
 ## About Django
 
@@ -14,9 +14,9 @@ Django é um framework web Python de alto nível que incentiva desenvolvimento r
 - Django 4+ (ou 5+)
 - Gunicorn
 - Git
-- Conta Wolke
+- Conta wolke
 
-## Configuração Inicial na Wolke
+## Configuração Inicial no wolke
 
 Para passos comuns a qualquer framework, consulta [wolkeSetup.md](../wolkeSetup.md). O que é específico do Django está detalhado abaixo.
 
@@ -115,7 +115,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 ## Variáveis de Ambiente (Django)
 
-Define no painel da Wolke:
+Define no painel do wolke:
 
 - `DJANGO_SETTINGS_MODULE`
 - `SECRET_KEY`
@@ -149,7 +149,7 @@ DATABASES = {
 - `ALLOWED_HOSTS` definido
 - `CSRF_TRUSTED_ORIGINS` definido
 - `SECRET_KEY` via variável de ambiente
-- `SECURE_SSL_REDIRECT=True` (se terminações TLS forem geridas pela Wolke)
+- `SECURE_SSL_REDIRECT=True` (se terminações TLS forem geridas pelo wolke)
 - `SESSION_COOKIE_SECURE=True` e `CSRF_COOKIE_SECURE=True`
 
 ## Base de Dados
@@ -184,11 +184,9 @@ Para rodar migrações automaticamente a cada deploy, adiciona este comando no c
 python manage.py migrate
 ```
 
-> Se preferires, também podes executar migrações como comando one‑off pelo painel.
-
 ## Health Check
 
-Usa o endpoint `/healthz/` e configura o health check na Wolke apontando para este caminho.
+Usa o endpoint `/healthz/` e configura o health check no wolke apontando para este caminho.
 
 ## Logging e Monitorização
 
@@ -228,7 +226,7 @@ CACHES = {
 celery -A myproject worker -l info
 ```
 
-> Se precisares de workers separados, cria um serviço adicional na Wolke com esse comando.
+> Se precisares de workers separados, cria um serviço adicional no wolke com esse comando.
 
 ## Comandos de Deploy
 

@@ -11,7 +11,7 @@
 
 ## `SECRET_KEY` ausente
 
-- Garante que a variável `SECRET_KEY` está definida na Wolke.
+- Garante que a variável `SECRET_KEY` está definida no wolke.
 
 ## `collectstatic` falha
 
@@ -25,12 +25,12 @@
 
 ## Erro 502 / aplicação não inicia
 
-- Confirma o comando do `gunicorn` no `wolke.yaml`.
+- Confirma o comando do `gunicorn` definido no painel do wolke.
 - Verifica o nome correto do módulo WSGI.
 
 ## Migrações não aplicadas
 
-- Executa `python manage.py migrate` como comando one‑off.
+- Confirma que o **Pre‑Deploy Command** inclui `python manage.py migrate` e faz novo deploy.
 
 ## Erros de base de dados
 
