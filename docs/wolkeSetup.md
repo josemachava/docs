@@ -25,25 +25,6 @@ Define as variáveis no painel da Wolke (Settings → Environment). Exemplos com
 - `SENTRY_DSN`
 - `APP_ENV=production`
 
-> As variáveis específicas do framework (ex: Django) devem ser definidas no guia do respectivo framework.
-
-## Configuração do `wolke.yaml`
-
-Cria um ficheiro `wolke.yaml` na raiz do projeto para definir build e run. Exemplo genérico:
-
-```yaml
-name: my-app
-language: python
-
-build:
-  command: |
-    pip install --no-cache-dir -r requirements.txt
-
-run:
-  command: python app.py
-  port: 8000
-```
-
 > Para comandos específicos (ex: Gunicorn, collectstatic), consulta o guia do teu framework.
 
 ## Deploy via Git
