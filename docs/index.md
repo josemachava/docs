@@ -2,11 +2,11 @@
 
 **Deploy moderno. Produção real. Sem complexidade.**
 
-A **Wolke** é uma plataforma cloud (PaaS) que permite fazer deploy de aplicações directamente a partir de um repositório Git com builds automáticos, execução em produção e zero gestão de servidores.
+O **Wolke** é uma plataforma cloud (PaaS) que permite fazer deploy de aplicações directamente a partir de um repositório Git com builds automáticos, execução em produção e zero gestão de servidores.
 
-## Porquê a Wolke?
+## Porquê o Wolke?
 
-A Wolke foi criada para developers que querem:
+O Wolke foi criado para developers que querem:
 
 - Deploy rápido e previsível
 - Infraestrutura gerida
