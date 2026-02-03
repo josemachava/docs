@@ -10,7 +10,7 @@ Este guia cobre o setup inicial e a configuração básica para **qualquer** apl
 
 ## Criar a Aplicação na Wolke
 
-1. Acede ao painel: https://staging.wolke.host/apps/create
+1. Acede ao painel: https://wolke.host/apps/create
 2. Cria uma nova aplicação.
 3. Seleciona **Deploy via Git**.
 4. Escolhe o repositório e a branch.
@@ -43,4 +43,4 @@ Usa o painel da Wolke para executar comandos one‑off no container (ex: migraç
 
 ## Links Úteis
 
-- Wolke: https://staging.wolke.host/apps/create
+- Wolke: https://wolke.host/apps/create

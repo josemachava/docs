@@ -264,5 +264,5 @@ Consulta [troubleshooting.md](../troubleshooting.md) para erros comuns.
 
 ## Links Úteis
 
-- Wolke: https://staging.wolke.host/apps/create
+- Wolke: https://wolke.host/apps/create
 - Django Docs: https://docs.djangoproject.com/
