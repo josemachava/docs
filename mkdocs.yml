@@ -48,7 +48,7 @@ nav:
       - "Wolke Setup": wolkeSetup.md
       - "Django Deploy": python/django.md
       - "Flask Deploy": python/flask.md
-      - "Troubleshooting": troubleshooting.md
+      - "Troubleshooting": python/troubleshooting.md
 
 # =================================================================
 # MARKDOWN EXTENSIONS (for enhanced content features)

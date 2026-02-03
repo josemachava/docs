@@ -1,4 +1,4 @@
-# Deploy de Aplicações Django na Wolke
+# Deploy de Aplicações Django no Wolke
 
 ## Overview
 
@@ -229,26 +229,6 @@ celery -A myproject worker -l info
 ```
 
 > Se precisares de workers separados, cria um serviço adicional na Wolke com esse comando.
-
-## CI/CD (exemplo GitHub Actions)
-
-```yaml
-name: CI
-on:
-  push:
-    branches: ["main"]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - run: python manage.py test
-```
 
 ## Comandos de Deploy
 

@@ -1,16 +1,16 @@
-# Configuração Inicial na Wolke
+# Configuração Inicial no Wolke
 
 Este guia cobre o setup inicial e a configuração básica para **qualquer** aplicação na Wolke.
 
 ## Pré‑requisitos
 
-- Conta na Wolke
+- Conta no Wolke
 - Repositório Git com o projeto
 - Runtime compatível com a stack (Python/Node/Go/etc.)
 
-## Criar a Aplicação na Wolke
+## Criar a Aplicação no Wolke
 
-1. Acede ao painel: https://wolke.host/apps/create
+1. Acede ao painel: [https://wolke.host/apps/create](https://wolke.host/apps/create)
 2. Cria uma nova aplicação.
 3. Seleciona **Deploy via Git**.
 4. Escolhe o repositório e a branch.
@@ -18,7 +18,7 @@ Este guia cobre o setup inicial e a configuração básica para **qualquer** apl
 
 ## Variáveis de Ambiente e Segredos
 
-Define as variáveis no painel da Wolke (Settings → Environment). Exemplos comuns:
+Define as variáveis no painel do Wolke (Settings → Environment). Exemplos comuns:
 
 - `DATABASE_URL`
 - `REDIS_URL`
@@ -33,7 +33,7 @@ Cada push para a branch configurada cria um novo deploy:
 
 ```bash
 git add .
-git commit -m "Deploy Django"
+git commit -m "Deploy on wolke"
 git push origin main
 ```
 
@@ -43,4 +43,4 @@ Usa o painel da Wolke para executar comandos one‑off no container (ex: migraç
 
 ## Links Úteis
 
-- Wolke: https://wolke.host/apps/create
+- Wolke: [https://wolke.host/apps/create](https://wolke.host/apps/create)
