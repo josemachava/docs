@@ -1,0 +1,42 @@
+# Configuração Inicial no Wolke
+
+Este guia cobre o setup inicial e a configuração básica para **qualquer** aplicação no wolke.
+
+## Pré‑requisitos
+
+- Conta no Wolke
+- Repositório Git com o projeto
+- Runtime compatível com a stack (Python/Node/Go/etc.)
+
+## Criar a Aplicação no Wolke
+
+1. Acede ao painel: [https://wolke.host/apps/create](https://wolke.host/apps/create)
+2. Cria uma nova aplicação.
+3. Seleciona **Deploy via Git**.
+4. Escolhe o repositório e a branch.
+5. Confirma para iniciar o primeiro deploy.
+
+## Variáveis de Ambiente e Segredos
+
+Define as variáveis no painel do Wolke (Settings → Environment). Exemplos comuns:
+
+- `DATABASE_URL`
+- `REDIS_URL`
+- `SENTRY_DSN`
+- `APP_ENV=production`
+
+> Para comandos específicos (ex: Gunicorn, collectstatic), consulta o guia do teu framework.
+
+## Deploy via Git
+
+Cada push para a branch configurada cria um novo deploy:
+
+```bash
+git add .
+git commit -m "Deploy on wolke"
+git push origin main
+```
+
+## Links Úteis
+
+- Wolke: [https://wolke.host/apps/create](https://wolke.host/apps/create)

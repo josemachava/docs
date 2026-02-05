@@ -4,37 +4,36 @@
 site_name: ""
 site_url: https://your-docs.com/
 
-
 # =================================================================
 # THEME CONFIGURATION
 # =================================================================
 theme:
   name: material
   language: en
-  
+
   # 1. Mixed Color Palette (Dark Header, Light Body, Purple Accent)
   palette:
     # Use the 'default' scheme for a light background and sidebar
-    scheme: default 
-    
+    scheme: default
+
     # Set the 'primary' color to black for the **top header** background
     primary: white
-    
+
     # Set the 'accent' color to deep-purple for links and the active sidebar highlight
     accent: deep-purple
-    
+
   # 2. Features (Layout and Navigation)
   features:
     # Creates the top-level navigation (e.g., "Docs", "Changelog")
     - navigation.tabs
     - navigation.tabs.sticky
     # Keeps the primary sidebar fixed for easy scrolling
-    - navigation.expand 
+    - navigation.expand
     # Integrates the secondary sidebar (Page Table of Contents) into the main content area
     - toc.integrate
     # Adds a subtle vertical line to expanded sections in the left sidebar
     - navigation.path
-    
+
   # 3. Custom Assets
   extra_css:
     # Link to a custom stylesheet for fine-tuning
@@ -45,10 +44,11 @@ theme:
 # =================================================================
 nav:
   - Docs:
-    - 'Home': index.md
-    - 'Your First Deploy': deploy.md
-  
- 
+      - "Home": index.md
+      - "Wolke Setup": wolkeSetup.md
+      - "Django Deploy": python/django.md
+      - "Flask Deploy": python/flask.md
+      - "Troubleshooting": python/troubleshooting.md
 
 # =================================================================
 # MARKDOWN EXTENSIONS (for enhanced content features)
