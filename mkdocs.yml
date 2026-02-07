@@ -49,6 +49,7 @@ nav:
       - "Django Deploy": python/django.md
       - "Flask Deploy": python/flask.md
       - "Troubleshooting": python/troubleshooting.md
+      - "Pipelines": pipelines/index.md
 
 # =================================================================
 # MARKDOWN EXTENSIONS (for enhanced content features)
