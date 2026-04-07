@@ -63,3 +63,7 @@ git push → build automático → aplicação online
 
 - [Deploy Flask](./python/flask.md)
 - [Deploy Django](./python/django.md)
+
+### Node.js
+
+- [Deploy Next.js](./node/nextjs.md)

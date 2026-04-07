@@ -50,6 +50,8 @@ nav:
       - "Flask Deploy": python/flask.md
       - "Troubleshooting": python/troubleshooting.md
       - "Pipelines": pipelines/index.md
+  - Node.js:
+      - "Next.js Deploy": node/nextjs.md
 
 # =================================================================
 # MARKDOWN EXTENSIONS (for enhanced content features)
